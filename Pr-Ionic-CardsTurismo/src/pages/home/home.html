@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Compras
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="text-align: center; margin: 0 auto;">
+    <carrinho-compras [quantidade]="contador"></carrinho-compras>
+    <produto (eventoModificador)="mudar($event)"></produto>
+  </div>
+</ion-content>
